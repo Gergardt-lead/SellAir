@@ -1,0 +1,78 @@
+body{
+    background-color:rgb(44, 42, 66);
+    color:rgb(162, 159, 159);
+}
+.bordertop{
+    padding:20px;
+    border:1px solid orange;
+    width:100%;
+}
+.border{
+    padding:20px;
+    border:1px solid orange;
+    width:30%;
+    float:left;
+}
+#nthChild li:nth-child(even){
+    background-color:#cecece;
+}
+#nthChild li:nth-child(odd){
+    color:red;
+}
+#nthChild li:nth-child(13){
+    font-size:22px;
+    background-color:yellow;
+    color:red;
+}
+#nthChild1 li:nth-child(1, 4, 7, 10, 13, 16, 19){
+    background-color:red;
+    /* font-size:30px; */
+}
+#nthChild2 li:nth-child(2, 5, 8, 11, 14, 17, 20){
+    background-color:red;
+}
+#nthChild3 li:nth-child(3, 6, 9, 12, 15, 18){
+    background-color:red;
+}
+
+
+#block{
+    box-shadow:0 0 10px rgb(198, 20, 20);
+    text-shadow:0 0 10px rgb(20, 80, 198);
+    color:white;
+    text-align:center;
+    /* padding:10px; */
+    font-size:80px;
+    margin-top:300px;
+    padding:0px;
+    margin:0px;
+    float:left;
+    margin:auto;
+    position:relative;
+    left:360px;
+    top:100px;
+}
+#block::before{
+    border:1px solid red;
+    box-shadow:-4px 0 20px rgb(20, 80, 198);
+    display:block;
+    width:91px;
+    height:91px;
+    content:"";
+    float:left;
+    margin-right:10px;
+}
+
+#block::after{
+    border :1px solid blue;
+    box-shadow:4px 0 20px rgb(198, 20, 20);
+    display:block;
+    width:91px;
+    height:91px;
+    content:"";
+    float:right;
+    margin-left:10px;
+}
+#center{
+    float:auto;
+}

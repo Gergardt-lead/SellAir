@@ -1,0 +1,60 @@
+#wrap{
+	background-color:rgb(224, 12, 12);
+	margin:70px;
+	height:900px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition:transform 20s linear 3s;
+	transform:rotateZ(1440deg);
+}
+#inwrap{
+	background-color:rgb(107, 250, 70);
+	width:75%;
+	height:75%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition:transform 18s linear 5s;
+	transform:rotateZ(-1440deg);
+}
+#inin{
+	width:50%;
+	height:50%;
+	background-color:rgb(16, 90, 223);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition:transform 17s linear 6s;
+	transform:rotateZ(1440deg);
+}
+#ininin{
+	width:25%;
+	height:25%;
+	background-color:rgb(184, 24, 228);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition:transform 16s linear 7s;
+	transform:rotateZ(1440deg);
+}
+#blo{
+	width:40px;
+	height:40px;
+	border-radius:20px;
+	overflow:hidden;
+	transition:transform 21s linear 2s;
+	transform:rotateZ(720000deg);
+}
+.wpoint{
+	width:50%;
+	height:50%;
+	background-color:white;
+	float:left;
+}
+.bpoint{
+	width:50%;
+	height:50%;
+	background-color:black;
+	float:left;
+}

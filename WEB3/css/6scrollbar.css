@@ -1,0 +1,132 @@
+body{
+    background-color:rgb(44, 42, 66);
+    color:rgb(162, 159, 159);
+    padding:0px;
+    margin:0px;
+    font-family:stalker;
+    height:2000px;
+}
+body::-webkit-scrollbar{
+    width:15px;/*толщина вертикального скролбара*/
+    height:;/*Толщина горизонтального скролбара*/
+}
+body::-webkit-scrollbar-track{
+    background-color:rgb(0, 177, 208);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color:rgb(79, 78, 74);
+}
+@font-face {
+    font-family:stalker;
+    src:url("rusboycott.ttf");
+}
+#scroll{
+    width:600px;
+    height:300px;
+    margin:15px;
+    padding:15px;
+    overflow-y:scroll;
+    background-color:rgb(48, 143, 89);
+    font-size:20px;
+    color:black;
+    float:left;
+    border-radius:10px;
+
+
+/*Свойтсва для работы со скролбаром. Данные свойства работают тольок на старых браузерах. Для всех нижеперечисленных
+свойств крайне желательно применять !important*/
+    scrollbar-face-color: !important;/*Цвет основного элемента управления*/
+    scrollbar-3dlight-color: !important;/*Цвет обрамления элементовк=управления скролбара*/
+    scrollbar-shadow-color: !important;/*Цвет тени*/
+    scrollbar-darkshadow-color: !important;/*Цвет светлых теней */
+    scrollbar-highlight-color: !important;/*Цвет темных теней */
+    scrollbar-track-color: !important;/*Цвет фона скролбара*/
+    scrollbar-arrow-color: !important;/*Цвет стрелок на кнопках управления скролбаром*/
+}
+/*Так же есть псевдосвойства выполняющие те же самые функции, тольок вот они работают со всеми остальными
+браузерами, а не только со старыми как предыдущие свойства */
+
+
+/*Настройка ширины скролбара. Надо заметить что большинство свойств могут не работать в связке с этими псевдосвойствами*/
+#scroll::-webkit-scrollbar{
+    width:12px;/*толщина вертикального скролбара*/
+    height:;/*Толщина горизонтального скролбара*/
+    float:left;
+}
+/*Насройки фонв скролбара. Надо заметить что большинство свойств могут не работать в связке с этими псевдосвойствами*/
+#scroll::-webkit-scrollbar-track{
+    background-color:black;
+        float:left;
+}
+/*Настройки ползунка/палки/элемент управления скроллбара. Надо заметить что большинство свойств могут не работать в связке с этими псевдосвойствами*/
+#scroll::-webkit-scrollbar-thumb{
+    background-color:rgb(212, 149, 8);
+        float:left;
+}
+/*Так же есть очень удобное свойство описанное ниже. Данное свойство позволяет пропорционально увеличивать или уменьшать изображение.
+к сожалению, не применяется в сочетании с анимациями*/
+img{
+    zoom:0.1;
+}
+textarea{
+    font-size:20px;
+    margin:15px;
+    padding:15px;
+    float:right;
+    width:600px;
+    height:300px;
+    background-color:rgb(48, 143, 89);
+    border:none;
+    border-radius:10px;
+}
+textarea::-webkit-scrollbar{
+    width:12px;/*толщина вертикального скролбара*/
+    height:;/*Толщина горизонтального скролбара*/
+}
+textarea::-webkit-scrollbar-track{
+    background-color:rgb(212, 8, 8);
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color:rgb(92, 8, 182);
+}
+
+#block{
+    box-shadow:0 0 10px rgb(198, 20, 20);
+    text-shadow:0 0 10px rgb(20, 80, 198);
+    color:white;
+    text-align:center;
+    /* padding:10px; */
+    font-size:60px;
+    margin-top:300px;
+    padding:0px;
+    margin:0px;
+    float:left;
+    left:130px;
+
+}
+#block::before{
+    border:1px solid red;
+    box-shadow:-4px 0 20px rgb(20, 80, 198);
+    display:block;
+    width:91px;
+    height:91px;
+    content:"";
+    float:left;
+    margin-right:10px;
+}
+
+#block::after{
+    border :1px solid blue;
+    box-shadow:4px 0 20px rgb(198, 20, 20);
+    display:block;
+    width:91px;
+    height:91px;
+    content:"";
+    float:right;
+    margin-left:10px;
+}
+#center{
+    margin:auto;
+}

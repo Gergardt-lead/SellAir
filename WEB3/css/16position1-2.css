@@ -1,0 +1,66 @@
+body{
+    background-color:;
+    padding:0px;
+    margin:0px;
+    font: 12px Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
+}
+#wrapper{
+    margin:50px;
+    /* outline:1px solsid red; */
+    width:;
+    height:700px;
+
+}
+#besAro{
+    /* outline:1px solid red; */
+    width:500px;
+    height:500px;
+    padding:50px;
+    background-color:black;
+    border-radius:300px;
+
+
+}
+#aro{
+    position:relative;
+    margin-top:;
+    /* outline:1px solid green; */
+    width:410px;
+    height:410px;
+    overflow: hidden;
+    border-radius:250px;
+    top:40px;
+
+
+}
+.block{
+    outline:2px solid black;
+    width:50%;
+    height:50%;
+    float:left;
+}
+.blue{
+    background:linear-gradient(to right bottom, rgb(102, 210, 242), rgb(80, 207, 245));
+}
+.wh{
+        background:linear-gradient(to right bottom, rgb(241, 246, 244), rgb(255, 255, 255));
+}
+.bukva{
+    position:absolute;
+    color:white;
+    font-size:90px;
+}
+#b{
+    top:120px;
+    transform: rotateX(-20deg);
+    left:220px;
+}
+#m{
+    top:50px;
+    left:395px;
+}
+#w{
+    top:120px;
+    left:565px;
+}

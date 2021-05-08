@@ -1,0 +1,54 @@
+body{
+	padding:0px;
+	margin:0px;
+	background-color:rgb(7, 17, 59);
+}
+h2{
+	color:white;
+}
+.bloks{
+	outline:1px solid red;
+	width:150px;
+	height:150px;
+	float:left;
+	transition-property:all;/* Определяет стилевое свойтсво, которое будет изменяться. Значения: all, любое из свойств стиля.
+	Чтобы при загрузке страницы анимация не появлялась нужно указать только одно значение
+
+	 */
+	transition-timing-function:;/*определяет скорость выполнения анимации на определенном участке*/
+	transition-duration:2s;
+
+
+}
+.bloks:hover{
+	background-color:rgb(108, 17, 97);
+	width:200px;
+	height:200px;
+
+}
+
+#blovk1{
+	transition-timing-function:linear;
+}
+#blovk2{
+	transition-timing-function:ease;
+}
+#blovk3{
+	transition-timing-function:ease-in;
+}
+#blovk4{
+	transition-timing-function:ease-out;
+}
+#blovk5{
+	transition-timing-function:ease-in-out;
+}
+#infoBlock{
+	width:700px;
+	float: right;
+	margin-right:30px;
+	position:relative;
+	/* right:0px; */
+	/* top:-500px; */
+	border:1px solid green;
+	height:700px;
+}

@@ -1,0 +1,1 @@
+{include file='/files/banlist/main.php'}

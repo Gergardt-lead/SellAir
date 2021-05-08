@@ -1,0 +1,27 @@
+body{
+	margin:0px;
+	padding:0px;
+	background-color:E2E2E2;
+}
+#topline{
+	/*outline:1px solid red;*/
+	height:40px;
+	margin-bottom:20px;
+	background-color:51FFF9;
+	background:linear-gradient(to left, FFA32B, 00FFE9);
+}
+#slider{
+	/*outline:1px solid red;*/
+	height:350px;
+	width:980px;
+	margin:auto;
+	margin-bottom:20px;
+	background-color:C0C0C0;
+}
+#wrapper{
+	/*outline:1px solid red;*/
+	margin:auto;
+	width:980px;
+	height:500px;
+	background-color:96FFF6;
+}

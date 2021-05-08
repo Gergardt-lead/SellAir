@@ -1,0 +1,158 @@
+body{
+	padding:0px;
+	margin:0px;
+	background-color:rgb(43, 49, 73);
+}
+   /* display:flex;*/
+
+		/*Flex - позволяет распологать элементы лежащие внутри блока при помощи технологии FLEX. Свойство display с значением flex применяется
+		именно к родителю тех элементов, которые мы планируем размещать на странице при помощи FLEX*/
+
+	/*flex-direction:column;*/
+		/*
+		Имя свойства: flex-direction
+		Описание: Позволяет определить направления расположения элементов внутри блока с свойством display:flex;
+		Возможные значения:
+		- row
+		- column
+		- row-reverse
+		- column-reverse
+		*/
+	/*justify-content:center;*/
+		/*
+		Имя свойства:justify-content
+		Описание: Свойство позволяет определить выравнивание flex элементов внутри блока по ширине родительского блока. Возможно одновременное использование с свойством align-items которое позволяет выравнивать элементы по высоте род.блока.
+		Возмозные значения:
+		- flex-start (Если flex-diriction указан как row, то элементы находятся в левой части блока, если flex-diriction указан как column то элементы находятся в верхней части блока)
+		- flex-end (сли flex-diriction указан как row, то элементы находятся в правой части блока, если flex-diriction указан как column то элементы находятся в нижней части блока)
+		- center (Если flex-direction указан как row, то элементы отправляются в центр блока горизонтали, если flex-direction указан как column тогда элементы устремляются в центр по вертикали)
+		- space-berween (Элементы устанавливаютя на равном удалении друг от друга без свободного пространства между первым и последним flex элементов по отношению к границам родительского блока)
+		- space-around (Элементы устанавливаются на равном удалении друг от друга с наличием свободного пространства между границей родительского блока и первым а так же последним flex элементов)
+		*/
+	/*align-items:stertch;*/
+		/*
+		Имя свойства: align-items
+		Описание свойства: Свойство позволяет определить выравнивание flex элементов внутри блока по высоте родительского блока. Возможно одновременное использование с свойством justify-content которое позволяет выравнивать элементы по ширине род.блока.
+		Возможные значения:
+		- flex-start (Элементы располагаются в верхне чсти род. блока)
+		- flex-end (Элементы располагаются в нижней части род.блока)
+		- center (Элементы устремляют в центр род.блока по высоте)
+		- stretch (Если элементы не имеют фиксирвонной ширины, они стремятся занять всю доступшную высоту род.блока)
+		*/
+#topline{
+	margin:0px;
+	height:50px;
+	background-color: #9e9e9e;
+	text-align: center;
+	font-size:36px;
+	color:#0f0f0f;
+}
+#wrapper{
+	/* width:900px; */
+	margin:30px;
+	min-height:2500px;
+	background-color:rgb(82, 80, 80);
+	padding:20px;
+	overflow:hidden;
+}
+#disblock{
+	height:700px;
+	background-color:black;
+	color:white;
+	text-align:center;
+	font-size:50px;
+}
+#secwrapbl{
+	display:flex;
+}
+#inforblock{
+	width:70%;
+	/* float:left; */
+}
+#firs{
+	width:80%;
+	background-color:rgb(120, 120, 120);
+	border-radius:10px;
+	text-align:center;
+	font-size:28px;
+	height:30px;
+	float: left;
+	margin-top:20px;
+	margin-left:10px;
+}
+#video{
+	width:80%;
+	float: left;
+	margin:10px;
+	height:500px;
+	background-color:black;
+	color:white;
+	text-align:center;
+	font-size:50px;
+}
+#text{
+	width:80%;
+	height:auto;
+	padding:20px;
+	font-size:25px;
+
+}
+#chatbl{
+	height:1200px;
+	background-color:rgb(73, 73, 73);
+	width:30%;
+	margin-top:20px;
+	border-radius:20px;
+	overflow:hidden;
+	/* float:left; */
+}
+#chattopl{
+	height:35px;
+	width:100%;
+	font-size:25px;
+	background-color:rgb(136, 136, 136);
+	text-align:center;
+}
+@media(max-width:767px){
+	#firs{
+		width:100%;
+		background-color:rgb(120, 120, 120);
+		border-radius:10px;
+		text-align:center;
+		font-size:28px;
+		height:30px;
+		float: left;
+		margin-top:20px;
+		margin-left:10px;
+	}
+	#secwrapbl{
+		flex-direction:column-reverse;
+
+	}
+	#inforblock{
+		width:auto;
+		margin-top:35px;
+	}
+	#chatbl{
+		width:auto;
+	}
+	#video{
+		width:100%;
+	}
+	#text{
+		width:100%;
+		height:auto;
+		padding:20px;
+		font-size:25px;
+	}
+	#wrapper{
+		margin:0px;
+		padding:0px;
+		background-color:rgba(210, 19, 16, 0);
+	}
+	#text p{
+		background-color:rgb(89, 89, 89);
+		padding:10px;
+		margin:0px;
+	}
+}

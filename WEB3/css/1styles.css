@@ -1,0 +1,13 @@
+body{
+    background-color:rgb(44, 42, 66);
+}
+#shadow{
+    box-shadow:0 0 10px rgb(198, 20, 20);
+    text-shadow:0 0 10px rgb(20, 80, 198);
+    color:white;
+    text-align:center;
+    /* padding:10px; */
+    font-size:50px;
+    margin-top:300px;
+
+}

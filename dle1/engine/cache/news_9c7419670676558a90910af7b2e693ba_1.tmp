@@ -1,0 +1,27 @@
+<div class="item">
+	<a href="http://dle1/o-skripte/1-post1.html" title="Добро пожаловать">
+		<div class="item_cont">
+			<b class="date"><time datetime="2019-12-15">15/12</time></b>
+			<span class="title">Добро пожаловать</span>
+		</div>
+		<div class="item_bg cover" style="background-image: url(http://dle1/uploads/boxsmall.jpg)"></div>
+	</a>
+	
+	<div class="edit_btn">
+		<a onclick="return dropdownmenu(this, event, MenuNewsBuild('1', 'short'), '170px')" href="#"><i title="Редактировать">Редактировать</i></a>
+	</div>
+	
+</div><div class="item">
+	<a href="http://dle1/ekonomika/4-news.html" title="News">
+		<div class="item_cont">
+			<b class="date"><time datetime="2019-12-15">15/12</time></b>
+			<span class="title">News</span>
+		</div>
+		<div class="item_bg cover"></div>
+	</a>
+	
+	<div class="edit_btn">
+		<a onclick="return dropdownmenu(this, event, MenuNewsBuild('4', 'short'), '170px')" href="#"><i title="Редактировать">Редактировать</i></a>
+	</div>
+	
+</div>
